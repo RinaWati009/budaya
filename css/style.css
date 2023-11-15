@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #886f02;
+  color: #000000;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 2%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #666363;
+  position: fixed;
+  font-size: 1.3rem;
+  font-weight: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+.navbar ul {
+  margin: 0px;
+  padding: 2px;
+  background: none;
+  display: block;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #000000;
+}
+.navbar ul li a:hover {
+  display: block;
+  color: #886f02;
+}
+.navbar ul li .dropdown {
+  display: none;
+}
+.navbar ul li:hover .dropdown {
+  display: block;
+  background: #ffffff;
+  position: absolute;
+  padding: 10px;
+}
+.navbar ul li:hover .dropdown li {
+  display: block;
+}
+.navbar ul li:hover .dropdown li a {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.navbar .navbar-logo span {
+  color: #886f02;
+}
+
+.logo {
+  float: left;
+  margin-right: 10px;
+}
+.text {
+  float: left;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/img/pas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(224, 216, 216) 8%,
+    rgba(219, 217, 217, 0) 50%
+  );
+}
+
+footer {
+  background-color: #886f02;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 1rem;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .links a:hover {
+  color: #000000;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: #000000;
+  font-weight: 700;
+}
+
+/* gambaran umum */
+.umum {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  margin-top: 9rem;
+}
+.umum span {
+  color: #886f02;
+}
+.umum .gambaranumum {
+  margin-top: 1rem;
+  text-align: justify;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-right: 60rem;
+  width: 50%;
+}
+.umum .jud {
+  font-size: 1.1rem;
+  width: 100%;
+  font-weight: 400;
+}
+.umum .judul {
+  font-weight: 800;
+  position: relative;
+  bottom: 660px; /* Ubah nilai sesuai kebutuhan */
+  margin-left: 60rem;
+  font-size: 1.1rem;
+  width: 77%;
+}
+.umum .baru {
+  position: relative;
+  bottom: 700px; /* Ubah nilai sesuai kebutuhan */
+  margin-left: 60rem;
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}

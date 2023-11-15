@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-AU-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kepulauan Raja Ampat</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Feather icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--my style-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "120857bf-b3ee-469e-af37-816d3d8047af", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "00e66a9f-57f6-4d19-a84e-ef7655ec0b68", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+    <!--Navbar Start-->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">
+          <img src="logo.jpg" width="100px" alt="Logo" class="logo" />
+          <p class="text">
+          Kepulauan <br /><span> Raja Ampat </span>
+        </p></a>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="gambaranumum.html">Tentang Kami</a>
+          </ul>
+          </li>
+
+          </nav>
+  </body>
+      <!-- <div class="navbar-nav">
+        <a href="#Beranda">Beranda</a>
+        <a href="#Profil">Profil</a>
+        <a href="#Publik">Informasi Publik</a>
+      </div> -->
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"> <i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Hero Section start-->
+    <section class="hero" id="Beranda"></section>
+    <!-- Hero Section end -->
+
+
+    <!--kontak section end-->
+
+    <!-- footer start -->
+    <footer>
+      <div class="links">
+        <a href="#">Beranda</a>
+        <a href="gambaranumum.html">Tentang Kami</a>
+        
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">Raja Ampat</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!--featers icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!--my javascript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
